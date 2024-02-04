@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+}
+
+input,
+textarea,
+select,
+button {
+  color: white;
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.searchBox {
+  display: block;
+  float: left;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox input {
+  border-radius: 8px 8px 8px 8px;
+  border: 0;
+  height: 36px;
+  padding: 4px 16px;
+  background-color: rgb(222, 184, 135, 0.8);
+  color: #000;
+}
+
+.searchBox button {
+  display: block;
+  float: right;
+  border-radius: 16px 16px 16px 16px;
+  border: 0;
+  height: 46px;
+  padding: 4px 16px;
+  background-color: rgb(222, 184, 135, 0.8);
+  transition-duration: 0.2s;
+}
+
+.searchBox button:hover {
+  background-color: rgba(157, 100, 25, 0.8);
+  color: rgba(157, 100, 25, 0.8);
+}
+
+.cityHeader {
+  display: grid;
+  position: relative;
+  float: inline-end;
+  border-radius: 12px 12px 12px 12px;
+  height: fit-content;
+  width: fit-content;
+  padding: 4px 16px;
+  background-color: rgb(222, 184, 135, 0.8);
+  color: #000;
+}
