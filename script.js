@@ -10,7 +10,6 @@ document.body.style.backgroundImage =
 // démarrage de la fonction après clic sur le bouton
 document.querySelector("#search").addEventListener("click", getWeather);
 
-
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     getWeather();
@@ -32,7 +31,6 @@ function geoCoding(city) {
     });
 }
 
-
 function getWeather(e) {
   CITY = document.querySelector("#cityName").value;
 
@@ -45,10 +43,11 @@ function getWeather(e) {
         if (data.hasOwnProperty("rain")) {
           rainCheck = `<p>Pluie: ${data.rain["1h"]}</p>`;
         }
-        let weatherDescription = data.weather[0].description
-        capitalizedWeatherDescription = weatherDescription.charAt(0).toUpperCase()
-        + weatherDescription.slice(1)
-        
+        let weatherDescription = data.weather[0].description;
+        capitalizedWeatherDescription =
+          weatherDescription.charAt(0).toUpperCase() +
+          weatherDescription.slice(1);
+
         document.querySelector(".meteoBox").innerHTML = `
         <div class="cityHeader">
         <h1>${data.name}
